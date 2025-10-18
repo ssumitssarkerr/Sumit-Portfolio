@@ -15,13 +15,13 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            background-color: #f8f9fa;
-            color: #333;
+            background-color: #e0f0ff; /* light blue background */
+            color: #0a2d5f; /* dark blue text */
             scroll-behavior: smooth;
         }
 
         a {
-            color: #007bff;
+            color: #0047b3; /* blue links */
             text-decoration: none;
         }
 
@@ -35,18 +35,19 @@
         nav {
             position: fixed;
             width: 100%;
-            background: #fff;
+            background: #003366; /* dark blue navbar */
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 15px 20px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
             z-index: 1000;
         }
 
         nav .logo {
             font-size: 1.5rem;
             font-weight: bold;
+            color: #ffffff;
         }
 
         nav .nav-links {
@@ -57,13 +58,14 @@
 
         nav .nav-links a {
             font-weight: bold;
+            color: #ffffff;
         }
 
         /* ===== Sections ===== */
         section h2 {
             font-size: 2rem;
             margin-bottom: 20px;
-            color: #222;
+            color: #002244; /* deep blue */
         }
 
         section p, section li {
@@ -78,7 +80,7 @@
         /* ===== Hero ===== */
         .hero {
             text-align: center;
-            background: #e9f7ff;
+            background: #99ccff; /* medium blue hero */
             padding: 120px 20px 80px 20px;
         }
 
@@ -88,11 +90,17 @@
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
+            border: 3px solid #003366; /* blue border around image */
         }
 
         .hero h1 {
             font-size: 2.2rem;
             margin-bottom: 15px;
+            color: #002244; /* dark blue text */
+        }
+
+        .hero p {
+            color: #002244; /* dark blue text */
         }
 
         /* ===== Reveal Animation ===== */
