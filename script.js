@@ -82,6 +82,14 @@
             padding: 120px 20px 80px 20px;
         }
 
+        .hero img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
         .hero h1 {
             font-size: 2.2rem;
             margin-bottom: 15px;
@@ -135,6 +143,7 @@
 
     <!-- ===== Hero Section ===== -->
     <header class="hero reveal">
+        <img src="profile.jpg" alt="Sumit Sarker">
         <div class="logo">Sumit Sarker</div>
         <h1>Graduate in Oceanography | Marine & Climate Researcher</h1>
         <p>Passionate about coastal vulnerability, marine pollution, and environmental modeling.</p>
@@ -242,4 +251,3 @@
 
 </body>
 </html>
-
