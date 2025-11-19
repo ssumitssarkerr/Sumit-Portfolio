@@ -1,327 +1,54 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sumit Sarker | Portfolio</title>
-  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-  <!-- ===== NAVBAR ===== -->
-  <nav>
-    <div class="nav__bar">
-      <a href="#"><span class="logo nav__logo">S</span> Sumit</a>
-      <div class="nav__menu__btn" id="menu-btn">
-        <i class="ri-menu-3-line"></i>
-      </div>
-    </div>
-    <ul class="nav__links" id="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#research">Research</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact" class="btn">Contact</a></li>
-      <!-- Socials and contact info inside mobile popup for quick access -->
-      <li class="nav__socials" aria-hidden="false">
-        <div class="nav-socials-inner">
-          <a class="social-link" href="https://www.linkedin.com/in/sumitsarker/" target="_blank" rel="noopener" aria-label="LinkedIn — Sumit Sarker">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="24" height="24" rx="4" fill="#0A66C2"/>
-              <path d="M6.94 8.94H9.38V18H6.94V8.94ZM8.16 6.97C7.35 6.97 6.74 6.36 6.74 5.56C6.74 4.76 7.35 4.14 8.16 4.14C8.97 4.14 9.58 4.76 9.58 5.56C9.58 6.36 8.97 6.97 8.16 6.97ZM13.5 8.94C14.92 8.94 15.86 9.83 16.18 10.47V8.94H18.62V18H16.98V12.14C16.98 10.9 16.44 9.94 15.28 9.94C14.02 9.94 13.62 10.92 13.62 12.06V18H11.18V8.94H13.5Z" fill="#FFF"/>
-            </svg>
-          </a>
-          <a class="social-link" href="https://www.researchgate.net/profile/Sumit-Sarker-3?ev=hdr_xprf" target="_blank" rel="noopener" aria-label="ResearchGate — Sumit Sarker">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="24" height="24" rx="4" fill="#00CCBB"/>
-              <path d="M8.5 16.5V8.5H11.8C13.02 8.5 13.9 9.23 13.9 10.38C13.9 11.53 13.02 12.26 11.8 12.26H10.1V16.5H8.5ZM15.1 16.5C14.06 16.5 13.14 16.06 12.6 15.33L13.64 14.56C14.02 14.95 14.6 15.2 15.22 15.2C15.98 15.2 16.56 14.8 16.56 14.14C16.56 13.5 15.98 13.12 15.26 13.12C14.64 13.12 14.16 13.38 13.86 13.75L12.78 12.9C13.36 12.2 14.32 11.8 15.46 11.8C17.2 11.8 18.5 12.84 18.5 14.26C18.5 15.66 17.24 16.5 15.1 16.5Z" fill="#fff"/>
-            </svg>
-          </a>
-          <a class="social-link" href="https://github.com/ssumitssarkerr" target="_blank" rel="noopener" aria-label="GitHub — ssumitssarkerr">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="24" height="24" rx="4" fill="#181616"/>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .5C5.73.5.86 5.37.86 11.64c0 4.73 3.07 8.75 7.33 10.17.54.09.73-.24.73-.52 0-.26-.01-1.12-.01-2.03-2.98.65-3.61-1.44-3.61-1.44-.49-1.25-1.2-1.58-1.2-1.58-.98-.67.07-.66.07-.66 1.08.08 1.65 1.12 1.65 1.12.96 1.64 2.52 1.17 3.14.9.1-.7.38-1.17.69-1.44-2.38-.27-4.88-1.19-4.88-5.29 0-1.17.42-2.12 1.12-2.87-.11-.28-.49-1.4.11-2.92 0 0 .92-.29 3.02 1.1.88-.25 1.82-.38 2.76-.38.94 0 1.88.13 2.76.38 2.1-1.39 3.02-1.1 3.02-1.1.6 1.52.22 2.64.11 2.92.7.75 1.12 1.7 1.12 2.87 0 4.11-2.5 5.02-4.88 5.29.39.34.73 1.01.73 2.04 0 1.47-.01 2.66-.01 3.02 0 .28.19.61.74.51C20.07 20.39 23.14 16.37 23.14 11.64 23.14 5.37 18.27.5 12 .5z" fill="#fff"/>
-            </svg>
-          </a>
-          <a class="social-link" href="https://x.com/thesumitsarker" target="_blank" rel="noopener" aria-label="X / Twitter — The Sumit Sarker">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <rect width="24" height="24" rx="4" fill="#1DA1F2"/>
-              <path d="M19 7.5c-.53.24-1.1.4-1.7.48.61-.37 1.07-.95 1.29-1.65-.57.34-1.2.58-1.87.71C16.8 6.4 15.95 6 15 6c-1.62 0-2.93 1.31-2.93 2.93 0 .23.03.46.08.68C9.72 9.49 7.2 8.08 5.62 6.02c-.25.43-.39.92-.39 1.45 0 1.01.51 1.9 1.29 2.43-.47-.01-.91-.14-1.3-.36v.04c0 1.4.99 2.57 2.31 2.83-.24.07-.49.11-.75.11-.18 0-.36-.02-.53-.05.36 1.13 1.41 1.95 2.66 1.98C8.1 15.9 6.84 16.5 5.5 16.5c-.28 0-.56-.02-.83-.05C4.32 17.5 5.56 18 7 18c4.2 0 6.5-3.48 6.5-6.5v-.3c.45-.33.83-.74 1.13-1.21-.41.18-.85.29-1.3.34.47-.28.83-.73 1-1.26z" fill="#fff"/>
-            </svg>
-          </a>
-        </div>
-        <div class="nav-contact-info">
-          <a class="contact-item" href="mailto:ssumitssarkerr@gmail.com" aria-label="Email Sumit"> 
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5v-11z" stroke="#BFEAF6" stroke-width="1.2" fill="none"/>
-              <path d="M4 6.5l7.2 5.1a2 2 0 0 0 2.6 0L21 6.5" stroke="#BFEAF6" stroke-width="1.2" fill="none"/>
-            </svg>
-            <span class="contact-text">ssumitssarkerr@gmail.com</span>
-          </a>
-          <a class="contact-item" href="tel:+8801726066558" aria-label="Call Sumit"> 
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-              <path d="M6.6 10.2a15.1 15.1 0 0 0 7.2 7.2l1.8-1.8a1 1 0 0 1 1.1-.2c1.2.5 2.6.8 4 .8a1 1 0 0 1 1 1v3.2a1 1 0 0 1-1 1C10.7 21.2 2.8 13.3 2.8 3a1 1 0 0 1 1-1H7a1 1 0 0 1 1 1c0 1.4.3 2.8.8 4a1 1 0 0 1-.2 1.1l-1.8 1.1z" stroke="#BFEAF6" stroke-width="1.2" fill="none"/>
-            </svg>
-            <span class="contact-text">+8801726066558</span>
-          </a>
-        </div>
-      </li>
-    </ul>
-    <a href="#contact" class="btn btn__large">Contact</a>
-  </nav>
-
-  <!-- ===== HOME SECTION ===== -->
-  <header class="section__container header__container" id="home">
-    <div class="header__content">
-      <h1>Sumit Sarker<br/></h1>
-      <p class="section__description">
-       BSc in Oceanography | Interested in -Wave Height and Sea Surface Height Remote Sensing of Ocean Surface Properties | Advanced Ocean Circulation Modeling | Interaction Between Ocean Currents and Marine Pollution
-      </p>
-      <div class="header__btn">
-        <button class="btn">Contact Me</button>
-      </div>
-    </div>
-    <div class="header__image">
-      <img src="images/sumit sarker (2).png" alt="Profile Picture" />
-    </div>
-  </header>
-
-  <!-- ===== ABOUT SECTION ===== -->
-  <section class="section__container about__container" id="about">
-    <div class="about__image">
-      <img src="images/sumit sarker (3).jpg" alt="about" class="about__img" />
-    </div>
+<section class="about" id="about">
     <div class="about__content">
-      <h2 class="section__header">A Bit About Me</h2>
-      <p class="section__description">
-        I am a BSc graduate in Oceanography from Noakhali Science and Technology University, passionate about the intersections of marine science, climate change, and geospatial technology. I specialize in integrating scientific research with advanced tools such as Python, R, QGIS, ArcGIS, data visualization, and applications of machine learning and AI for environmental analysis. My experience spans mapping coastal land use changes, detecting marine heatwaves, and analyzing marine pollution, transforming complex datasets into actionable insights. Beyond research, I have contributed to proposals, poster presentations, and leadership initiatives, honing my skills in communication, teamwork, and project management. My key interests include marine heatwaves, harmful algal blooms, and coastal ecosystem sustainability, with a focus on Bangladesh’s blue economy. I am eager to contribute as a marine and environmental researcher, applying my expertise in GIS, remote sensing, and data-driven environmental solutions.
-      </p>
+        <h2 class="section__title">About Me</h2>
 
+        <p class="about__intro">
+            <strong>Sumit Sarker</strong><br>
+            B.Sc. (Honors) in Oceanography<br>
+            Noakhali Science and Technology University (NSTU), Bangladesh
+        </p>
 
+        <p class="about__subtext">
+            Interested in – Marine Heatwaves and Climate Variability • Remote Sensing of Ocean Surface Properties • 
+            Hydrological & Coastal Hazard Modelling • Marine Pollution and Ecotoxicology • GIS and Spatial Analysis.
+        </p>
 
-      <div class="about__btn">
-        <a class="btn" href="SUMIT SARKER__CV.pdf" download="Sumit_Sarker_CV.pdf">Download CV</a>
-      </div>
+        <p class="about__bio">
+            Sumit Sarker is an oceanography graduate specializing in marine climate hazards, remote sensing, and 
+            environmental modelling. Growing up near the Meghna estuarine coastline, he developed a deep interest in 
+            coastal processes and ecosystem vulnerability. Sumit has conducted extensive research on marine heatwaves in 
+            the Bay of Bengal, flood susceptibility mapping using machine learning, and microplastics pollution in 
+            estuarine environments. 
+            <br><br>
+            With multiple conference presentations, poster awards, and collaborations across environmental and GIS-based 
+            projects, he aims to contribute to advanced ocean–atmosphere research and pursue graduate studies in marine or 
+            environmental science. His long-term goal is to support climate-resilient coastal management and sustainable 
+            ocean resource governance.
+        </p>
+
+        <h3 class="subheading">Key Skills</h3>
+        <ul class="skills__list">
+            <li><strong>Hard Skills:</strong> Field sampling • Laboratory analysis • Water quality assessment • 
+                Marine data interpretation</li>
+            <li><strong>Software Skills:</strong> ArcGIS • QGIS • Google Earth Engine • HEC-RAS • HEC-GeoRAS • 
+                Python • R • MATLAB • SPSS • Excel</li>
+            <li><strong>Digital Skills:</strong> Research visualization • Scientific posters • Adobe Illustrator • Photoshop</li>
+        </ul>
+
+        <h3 class="subheading">Soft Skills</h3>
+        <ul class="skills__list">
+            <li>Leadership • Teamwork • Communication • Time Management • Adaptability • Creativity • Work Ethics</li>
+        </ul>
+
+        <h3 class="subheading">Languages</h3>
+        <p class="about__languages">Proficient in Bangla and English (speaking, reading, and writing)</p>
+
+        <h3 class="subheading">Contact</h3>
+        <p class="about__contact">
+            <strong>Email:</strong> sumitsarkerrr@gmail.com <br>
+            <strong>Mobile:</strong> (+88) — Your number if you want to add <br>
+            <strong>LinkedIn:</strong> Your profile link <br>
+            <strong>ResearchGate:</strong> Your profile link
+        </p>
     </div>
-  </section>
-
-  <!-- ===== EDUCATION ===== -->
-  <section id="education" class="section--block">
-    <div class="section__banner education__banner">
-      <div class="banner-inner">
-        <h2 class="banner-title">Education</h2>
-      </div>
-    </div>
-
-    <div class="section__container section__content education__content">
-      <div class="education__card">
-        <h4>B.Sc. in Oceanography</h4>
-        <p>NSTU (2020–2025) | CGPA: 3.81/4.00</p>
-      </div>
-      <div class="education__card">
-        <h4>HSC</h4>
-        <p>Government City College, Chattogram (2017–2019) | GPA: 5.00/5.00</p>
-      </div>
-      <div class="education__card">
-        <h4>Junior School Certificate (JSC)</h4>
-        <p>Nasirabad Government High School, Chattogram — Chittagong Board (2014) | GPA: 5.00/5.00</p>
-      </div>
-      <div class="education__card">
-        <h4>Primary School Certificate (PSC)</h4>
-        <p>Holy Child School and College, Chattogram — Chittagong Board (2011) | GPA: 5.00/5.00</p>
-      </div>
-      <div class="education__card">
-        <h4>SSC</h4>
-        <p>Nasirabad Government High School (2012–2017) | GPA: 5.00/5.00</p>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== RESEARCH EXPERIENCE ===== -->
-  <section id="research" class="section--block">
-    <div class="section__banner research__banner">
-      <div class="banner-inner">
-        <h2 class="banner-title">Research Experience</h2>
-      </div>
-    </div>
-
-    <div class="section__container section__content research__content">
-      <div class="research__card">
-        <h4>Flood Susceptibility Mapping</h4>
-        <p>Remote sensing, MCDA, AHP, HEC-RAS modeling (2025–Present)</p>
-      </div>
-      <div class="research__card">
-        <h4>Coastal Vulnerability Assessment</h4>
-        <p>GIS + community-based tools (2025–Present)</p>
-      </div>
-      <div class="research__card">
-        <h4>Microplastics in Bay of Bengal</h4>
-        <p>Field sampling, lab analysis (2023–2024)</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== PROJECTS ===== -->
-  <section id="projects" class="section--block">
-    <div class="section__banner projects__banner">
-      <div class="banner-inner">
-        <h2 class="banner-title">Academic Projects</h2>
-      </div>
-    </div>
-
-    <div class="section__container section__content portfolio__content">
-      <p class="section__description">Explore a showcase of academic work and analyses related to oceanography and coastal systems.</p>
-      <div class="portfolio__grid">
-        <div class="portfolio__card" data-title="Marine Heatwaves Study" data-img="images/mainill-1181x600.jpg">
-          <img src="images/mainill-1181x600.jpg" alt="Marine Heatwaves Study" loading="lazy">
-          <div class="card-overlay"><div class="card-title">Marine Heatwaves Study</div></div>
-        </div>
-        <div class="portfolio__card" data-title="Microplastics Analysis" data-img="images/beautiful-arrangement-different-books_23-2148883796.jpg">
-          <img src="images/beautiful-arrangement-different-books_23-2148883796.jpg" alt="Microplastics Analysis" loading="lazy">
-          <div class="card-overlay"><div class="card-title">Microplastics Analysis</div></div>
-        </div>
-        <div class="portfolio__card" data-title="Coastal Vulnerability" data-img="images/bookshelf-inside-stockholm-public-library.jpg">
-          <img src="images/bookshelf-inside-stockholm-public-library.jpg" alt="Coastal Vulnerability" loading="lazy">
-          <div class="card-overlay"><div class="card-title">Coastal Vulnerability</div></div>
-        </div>
-        <div class="portfolio__card" data-title="Field Sampling Campaign" data-img="images/still-life-office-desk-mess_23-2150164851.jpg">
-          <img src="images/still-life-office-desk-mess_23-2150164851.jpg" alt="Field Sampling Campaign" loading="lazy">
-          <div class="card-overlay"><div class="card-title">Field Sampling Campaign</div></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== SKILLS ===== -->
-  <!-- ===== SKILLS ===== -->
-  <section id="skills" class="section--block">
-    <div class="section__banner skills__banner">
-      <div class="banner-inner">
-        <h2 class="banner-title">Skills</h2>
-      </div>
-    </div>
-
-    <div class="section__container section__content skills__content">
-      <div class="skills__grid">
-        <div class="skill-card">
-          <h4>GIS & Remote Sensing</h4>
-          <p>QGIS, ArcGIS, HEC-RAS, Delft3D</p>
-        </div>
-        <div class="skill-card">
-          <h4>Programming & Analysis</h4>
-          <p>Python, R, MATLAB, SPSS</p>
-        </div>
-        <div class="skill-card">
-          <h4>Data & Visualization</h4>
-          <p>Cartography, matplotlib, seaborn, GIS visualization</p>
-        </div>
-        <div class="skill-card">
-          <h4>Graphics & Design</h4>
-          <p>Adobe Photoshop, Illustrator</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ===== CONTACT ===== -->
-  <section class="section__container contact__container" id="contact">
-    <div class="logo">S</div>
-    <h2 class="section__header">Let's Talk!</h2>
-    <p class="section__description">I'm open to research collaborations, enquiries, and opportunities. Reach out via email or LinkedIn.</p>
-    <div class="contact__socials">
-      <a class="social-link" href="https://x.com/thesumitsarker" target="_blank" rel="noopener" aria-label="X / Twitter — The Sumit Sarker">
-        <!-- X (Twitter) SVG -->
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="24" height="24" rx="4" fill="#1DA1F2"/>
-          <path d="M19 7.5c-.53.24-1.1.4-1.7.48.61-.37 1.07-.95 1.29-1.65-.57.34-1.2.58-1.87.71C16.8 6.4 15.95 6 15 6c-1.62 0-2.93 1.31-2.93 2.93 0 .23.03.46.08.68C9.72 9.49 7.2 8.08 5.62 6.02c-.25.43-.39.92-.39 1.45 0 1.01.51 1.9 1.29 2.43-.47-.01-.91-.14-1.3-.36v.04c0 1.4.99 2.57 2.31 2.83-.24.07-.49.11-.75.11-.18 0-.36-.02-.53-.05.36 1.13 1.41 1.95 2.66 1.98C8.1 15.9 6.84 16.5 5.5 16.5c-.28 0-.56-.02-.83-.05C4.32 17.5 5.56 18 7 18c4.2 0 6.5-3.48 6.5-6.5v-.3c.45-.33.83-.74 1.13-1.21-.41.18-.85.29-1.3.34.47-.28.83-.73 1-1.26z" fill="#fff"/>
-        </svg>
-      </a>
-      <a class="social-link" href="https://www.linkedin.com/in/sumitsarker/" target="_blank" rel="noopener" aria-label="LinkedIn — Sumit Sarker">
-        <!-- LinkedIn SVG -->
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="24" height="24" rx="4" fill="#0A66C2"/>
-          <path d="M6.94 8.94H9.38V18H6.94V8.94ZM8.16 6.97C7.35 6.97 6.74 6.36 6.74 5.56C6.74 4.76 7.35 4.14 8.16 4.14C8.97 4.14 9.58 4.76 9.58 5.56C9.58 6.36 8.97 6.97 8.16 6.97ZM13.5 8.94C14.92 8.94 15.86 9.83 16.18 10.47V8.94H18.62V18H16.98V12.14C16.98 10.9 16.44 9.94 15.28 9.94C14.02 9.94 13.62 10.92 13.62 12.06V18H11.18V8.94H13.5Z" fill="#FFF"/>
-        </svg>
-      </a>
-
-      <a class="social-link" href="https://www.researchgate.net/profile/Sumit-Sarker-3?ev=hdr_xprf" target="_blank" rel="noopener" aria-label="ResearchGate — Sumit Sarker">
-        <!-- ResearchGate-like SVG (simple RG mark) -->
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="24" height="24" rx="4" fill="#00CCBB"/>
-          <path d="M8.5 16.5V8.5H11.8C13.02 8.5 13.9 9.23 13.9 10.38C13.9 11.53 13.02 12.26 11.8 12.26H10.1V16.5H8.5ZM15.1 16.5C14.06 16.5 13.14 16.06 12.6 15.33L13.64 14.56C14.02 14.95 14.6 15.2 15.22 15.2C15.98 15.2 16.56 14.8 16.56 14.14C16.56 13.5 15.98 13.12 15.26 13.12C14.64 13.12 14.16 13.38 13.86 13.75L12.78 12.9C13.36 12.2 14.32 11.8 15.46 11.8C17.2 11.8 18.5 12.84 18.5 14.26C18.5 15.66 17.24 16.5 15.1 16.5Z" fill="#fff"/>
-        </svg>
-      </a>
-
-      <a class="social-link" href="https://github.com/ssumitssarkerr" target="_blank" rel="noopener" aria-label="GitHub — ssumitssarkerr">
-        <!-- GitHub SVG -->
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="24" height="24" rx="4" fill="#181616"/>
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .5C5.73.5.86 5.37.86 11.64c0 4.73 3.07 8.75 7.33 10.17.54.09.73-.24.73-.52 0-.26-.01-1.12-.01-2.03-2.98.65-3.61-1.44-3.61-1.44-.49-1.25-1.2-1.58-1.2-1.58-.98-.67.07-.66.07-.66 1.08.08 1.65 1.12 1.65 1.12.96 1.64 2.52 1.17 3.14.9.1-.7.38-1.17.69-1.44-2.38-.27-4.88-1.19-4.88-5.29 0-1.17.42-2.12 1.12-2.87-.11-.28-.49-1.4.11-2.92 0 0 .92-.29 3.02 1.1.88-.25 1.82-.38 2.76-.38.94 0 1.88.13 2.76.38 2.1-1.39 3.02-1.1 3.02-1.1.6 1.52.22 2.64.11 2.92.7.75 1.12 1.7 1.12 2.87 0 4.11-2.5 5.02-4.88 5.29.39.34.73 1.01.73 2.04 0 1.47-.01 2.66-.01 3.02 0 .28.19.61.74.51C20.07 20.39 23.14 16.37 23.14 11.64 23.14 5.37 18.27.5 12 .5z" fill="#fff"/>
-        </svg>
-      </a>
-    </div>
-    <div class="contact__info" aria-label="Contact information">
-      <a class="contact-item" href="mailto:ssumitssarkerr@gmail.com" aria-label="Email Sumit"> 
-        <!-- mail icon -->
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M3 6.5A2.5 2.5 0 0 1 5.5 4h13A2.5 2.5 0 0 1 21 6.5v11A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5v-11z" stroke="#BFEAF6" stroke-width="1.2" fill="none"/>
-          <path d="M4 6.5l7.2 5.1a2 2 0 0 0 2.6 0L21 6.5" stroke="#BFEAF6" stroke-width="1.2" fill="none"/>
-        </svg>
-        <span class="contact-text">ssumitssarkerr@gmail.com</span>
-      </a>
-      <a class="contact-item" href="tel:+8801726066558" aria-label="Call Sumit"> 
-        <!-- phone icon -->
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <path d="M6.6 10.2a15.1 15.1 0 0 0 7.2 7.2l1.8-1.8a1 1 0 0 1 1.1-.2c1.2.5 2.6.8 4 .8a1 1 0 0 1 1 1v3.2a1 1 0 0 1-1 1C10.7 21.2 2.8 13.3 2.8 3a1 1 0 0 1 1-1H7a1 1 0 0 1 1 1c0 1.4.3 2.8.8 4a1 1 0 0 1-.2 1.1l-1.8 1.1z" stroke="#BFEAF6" stroke-width="1.2" fill="none"/>
-        </svg>
-        <span class="contact-text">+8801726066558</span>
-      </a>
-    </div>
-  </section>
-
-  <!-- ===== FOOTER ===== -->
-  <footer class="footer">
-    <div class="footer__inner">
-      <div class="footer__socials">
-        <a class="social-link" href="https://www.linkedin.com/in/sumitsarker/" target="_blank" rel="noopener" aria-label="LinkedIn — Sumit Sarker">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="24" height="24" rx="4" fill="#0A66C2"/>
-            <path d="M6.94 8.94H9.38V18H6.94V8.94ZM8.16 6.97C7.35 6.97 6.74 6.36 6.74 5.56C6.74 4.76 7.35 4.14 8.16 4.14C8.97 4.14 9.58 4.76 9.58 5.56C9.58 6.36 8.97 6.97 8.16 6.97ZM13.5 8.94C14.92 8.94 15.86 9.83 16.18 10.47V8.94H18.62V18H16.98V12.14C16.98 10.9 16.44 9.94 15.28 9.94C14.02 9.94 13.62 10.92 13.62 12.06V18H11.18V8.94H13.5Z" fill="#FFF"/>
-          </svg>
-        </a>
-        <a class="social-link" href="https://www.researchgate.net/profile/Sumit-Sarker-3?ev=hdr_xprf" target="_blank" rel="noopener" aria-label="ResearchGate — Sumit Sarker">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="24" height="24" rx="4" fill="#00CCBB"/>
-            <path d="M8.5 16.5V8.5H11.8C13.02 8.5 13.9 9.23 13.9 10.38C13.9 11.53 13.02 12.26 11.8 12.26H10.1V16.5H8.5ZM15.1 16.5C14.06 16.5 13.14 16.06 12.6 15.33L13.64 14.56C14.02 14.95 14.6 15.2 15.22 15.2C15.98 15.2 16.56 14.8 16.56 14.14C16.56 13.5 15.98 13.12 15.26 13.12C14.64 13.12 14.16 13.38 13.86 13.75L12.78 12.9C13.36 12.2 14.32 11.8 15.46 11.8C17.2 11.8 18.5 12.84 18.5 14.26C18.5 15.66 17.24 16.5 15.1 16.5Z" fill="#fff"/>
-          </svg>
-        </a>
-        <a class="social-link" href="https://github.com/ssumitssarkerr" target="_blank" rel="noopener" aria-label="GitHub — ssumitssarkerr">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect width="24" height="24" rx="4" fill="#181616"/>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 .5C5.73.5.86 5.37.86 11.64c0 4.73 3.07 8.75 7.33 10.17.54.09.73-.24.73-.52 0-.26-.01-1.12-.01-2.03-2.98.65-3.61-1.44-3.61-1.44-.49-1.25-1.2-1.58-1.2-1.58-.98-.67.07-.66.07-.66 1.08.08 1.65 1.12 1.65 1.12.96 1.64 2.52 1.17 3.14.9.1-.7.38-1.17.69-1.44-2.38-.27-4.88-1.19-4.88-5.29 0-1.17.42-2.12 1.12-2.87-.11-.28-.49-1.4.11-2.92 0 0 .92-.29 3.02 1.1.88-.25 1.82-.38 2.76-.38.94 0 1.88.13 2.76.38 2.1-1.39 3.02-1.1 3.02-1.1.6 1.52.22 2.64.11 2.92.7.75 1.12 1.7 1.12 2.87 0 4.11-2.5 5.02-4.88 5.29.39.34.73 1.01.73 2.04 0 1.47-.01 2.66-.01 3.02 0 .28.19.61.74.51C20.07 20.39 23.14 16.37 23.14 11.64 23.14 5.37 18.27.5 12 .5z" fill="#fff"/>
-          </svg>
-        </a>
-      </div>
-      <div style="margin-top:8px">Copyright © 2025 Sumit Sarker. All Rights Reserved.</div>
-    </div>
-  </footer>
-
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="main.js"></script>
-</body>
-</html>
-
-<!-- Lightbox modal -->
-<div id="lightbox" class="lightbox" aria-hidden="true">
-  <button class="lightbox-close" aria-label="Close">×</button>
-  <div class="lightbox-content">
-    <img src="" alt="" />
-    <h3 class="lightbox-title"></h3>
-  </div>
-</div>
-
-<!-- Sticky contact -->
-<a href="#contact" class="sticky-contact" aria-label="Contact">Contact</a>
+</section>
