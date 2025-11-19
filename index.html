@@ -1,72 +1,236 @@
-<section class="about" id="about">
-    <div class="about__content">
-        <h2 class="section__title">About Me</h2>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sumit Sarker — Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="name">Sumit Sarker</h1>
+        <p class="tagline">B.Sc. (Hons) in Oceanography — Marine heatwaves · Coastal vulnerability · GIS & Remote Sensing</p>
+      </div>
 
-        <p class="about__intro">
-            <strong>Sumit Sarker</strong><br>
-            B.Sc. (Honors) in Oceanography<br>
-            Noakhali Science and Technology University (NSTU), Bangladesh<br>
-            CGPA: 3.81/4.00
-        </p>
-
-        <p class="about__subtext">
-            Research Interests: Marine Heatwaves • Remote Sensing • Coastal Vulnerability • Flood Modeling • 
-            Hydrometeorology • Microplastic Pollution • GIS and Spatial Analysis.
-        </p>
-
-        <p class="about__bio">
-            I am an Oceanography graduate specializing in marine climate hazards, hydrometeorological disasters,
-            geospatial analysis, and marine pollution research. My academic and professional experience spans 
-            marine heatwave detection, multi-hazard coastal vulnerability assessment, flood susceptibility  
-            modeling (HEC-RAS, AHP, MCDA), and microplastic contamination studies in the Meghna estuary and 
-            Sandwip Channel.
-            <br><br>
-            I currently serve as a Research Assistant at the National Oceanographic and Maritime Institute 
-            (NOAMI), contributing to projects on the 2024 Eastern Bangladesh extreme flood event, 
-            multi-hazard coastal vulnerability mapping, and hydrological modeling for disaster preparedness.
-            <br><br>
-            Alongside my research experience, I have presented multiple posters and abstracts at 
-            international conferences (BUET IWFM, ICSF Sylhet Agricultural University, CVASU, BSMRMU, NSTU)
-            and received multiple best-poster and academic awards.  
-            My long-term goal is to pursue graduate studies in marine or environmental science and contribute  
-            to climate-resilient coastal management and sustainable ocean governance.
-        </p>
-
-        <h3 class="subheading">Key Skills</h3>
-        <ul class="skills__list">
-            <li><strong>Hard Skills:</strong> Field sampling • Laboratory analysis • Questionnaire surveys • 
-                Hydrological assessments • Plankton identification • Water quality monitoring</li>
-
-            <li><strong>Software Skills:</strong> ArcGIS • QGIS • Google Earth Engine • MATLAB • Python • R • 
-                IBM SPSS • HEC-RAS • HEC-GeoRAS • Delft-3D • MS Office • Google Workspace</li>
-
-            <li><strong>Graphics & Documentation:</strong> Adobe Illustrator • Photoshop • InDesign • 
-                Scientific poster design • Research visualization</li>
-        </ul>
-
-        <h3 class="subheading">Soft Skills</h3>
-        <ul class="skills__list">
-            <li>Leadership • Teamwork • Communication • Time Management • Adaptability • Networking • Work Ethics</li>
-        </ul>
-
-        <h3 class="subheading">Education</h3>
-        <p class="about__education">
-            <strong>B.Sc. in Oceanography</strong>, NSTU (2020–2025) — CGPA 3.81/4.00<br>
-            <strong>HSC:</strong> Government City College, Chattogram — GPA 5.00/5.00<br>
-            <strong>SSC:</strong> Nasirabad Government High School — GPA 5.00/5.00
-        </p>
-
-        <h3 class="subheading">Languages</h3>
-        <p class="about__languages">
-            Bangla: Native • English: Professional (Speaking, Reading, Writing)
-        </p>
-
-        <h3 class="subheading">Contact</h3>
-        <p class="about__contact">
-            <strong>Phone:</strong> +8801629015976<br>
-            <strong>Email:</strong> ssumitssarkerr@gmail.com<br>
-            <strong>LinkedIn:</strong> https://www.linkedin.com/in/sumitsarker/<br>
-            <strong>ResearchGate:</strong> https://www.researchgate.net/profile/Sumit-Sarker-3
-        </p>
+      <nav class="nav">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#research">Research</a>
+        <a href="#posters">Posters</a>
+        <a href="#awards">Awards</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-</section>
+  </header>
+
+  <main class="container">
+    <!-- Hero / About -->
+    <section id="about" class="section section-box about-grid">
+      <div class="photo-col">
+        <!-- Temporary profile photo from uploaded file -->
+        <img class="profile-photo" src="/mnt/data/56b0cda1-54d1-47dd-b46c-e4450314060d.png" alt="Sumit Sarker">
+      </div>
+
+      <div class="content-col">
+        <h2 class="section__title">About</h2>
+        <p class="lead">
+          <strong>Sumit Sarker</strong><br>
+          B.Sc. (Honors) in Oceanography, Noakhali Science and Technology University (NSTU) — CGPA 3.81/4.00
+        </p>
+
+        <p>
+          I am an oceanography graduate specializing in marine climate hazards, hydrometeorological disasters,
+          geospatial analysis, and marine pollution research. My experience includes marine heatwave detection,
+          multi-hazard coastal vulnerability assessment, flood susceptibility modeling (HEC-RAS, AHP, MCDA), and
+          microplastic contamination studies in the Meghna estuary and Sandwip Channel.
+        </p>
+
+        <p>
+          Currently a Research Assistant at the National Oceanographic and Maritime Institute (NOAMI), I have
+          worked on the August 2024 extreme flood multidisciplinary analysis, flood susceptibility mapping,
+          and coastal vulnerability projects. I aim to pursue graduate studies in marine or environmental science
+          and contribute to climate-resilient coastal management.
+        </p>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section section-box">
+      <h2 class="section__title">Education</h2>
+      <div class="card-list">
+        <div class="card">
+          <h3>B.Sc. in Oceanography</h3>
+          <p>Noakhali Science and Technology University (NSTU), 2020–2025 — CGPA 3.81 / 4.00</p>
+        </div>
+
+        <div class="card">
+          <h3>Higher Secondary Certificate (HSC)</h3>
+          <p>Government City College, Chattogram — GPA 5.00 / 5.00</p>
+        </div>
+
+        <div class="card">
+          <h3>Secondary School Certificate (SSC)</h3>
+          <p>Nasirabad Government High School, Chattogram — GPA 5.00 / 5.00</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Experience -->
+    <section id="research" class="section section-box">
+      <h2 class="section__title">Research Experience</h2>
+
+      <div class="job">
+        <h3>Research Assistant — NOAMI</h3>
+        <p class="muted">Feni, Noakhali, Bhola, Patuakhali, Barguna, Cumilla — Aug 2025 – Present</p>
+        <ul>
+          <li><strong>Project:</strong> The Unprecedented August 2024 Flood — multidisciplinary analysis of hydrometeorological drivers, loss & damage, societal impacts and policy frameworks.</li>
+          <li><strong>Duties:</strong> Household surveys, FGDs, KIIs, awareness campaigns; collaboration with NOAMI & Korea SHE Foundation for resilience and policy inputs.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Research Assistant — NOAMI</h3>
+        <p class="muted">Noakhali, Feni, Lakshmipur & Cumilla — Aug 2025 – Present</p>
+        <ul>
+          <li><strong>Project:</strong> Flood Susceptibility Mapping using Remote Sensing, Hydraulic Modeling & Community Data.</li>
+          <li><strong>Duties:</strong> Flood mapping with MCDA/AHP, HEC-RAS and HEC-GeoRAS; field data collection for validation.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Research Assistant — NOAMI</h3>
+        <p class="muted">Noakhali, Bhola, Patuakhali & Barguna — Jul 2025 – Present</p>
+        <ul>
+          <li><strong>Project:</strong> Multi-Hazard Coastal Vulnerability Assessment of Bangladesh using geospatial & participatory tools.</li>
+          <li><strong>Duties:</strong> GIS & remote sensing analysis; field surveys; vulnerability maps with adaptation recommendations.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Research Assistant — Microplastics Studies</h3>
+        <p class="muted">Noakhali — Feb 2023 – Apr 2024 / Jul 2021 – Nov 2022</p>
+        <ul>
+          <li>Identification and extraction of microplastics in calanoid copepods and estuarine plankton; water sampling and plankton analysis; assessing potential human-health pathways.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Undergraduate Project</h3>
+        <p class="muted">Detection & Analysis of Marine Heatwaves in the Bay of Bengal (1982–2025)</p>
+        <ul>
+          <li>Monitored SST anomalies and detected marine heatwaves, analyzed ENSO/IOD influences and chlorophyll-a responses; proposed adaptive strategies for coastal resilience.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Posters -->
+    <section id="posters" class="section section-box">
+      <h2 class="section__title">Posters & Presentations</h2>
+
+      <ol class="presentations">
+        <li><strong>Integration of MCDA & GIS for Aquaculture Site Suitability</strong> — 3rd ICSF, Sylhet Agricultural University (27–28 Sep 2025). (Best Poster)</li>
+        <li><strong>Enhancing Aquaculture Water Quality Using Water Hyacinth</strong> — CVASU (29–30 Apr 2025).</li>
+        <li><strong>Flood Susceptibility Mapping in Noakhali</strong> — 1st Intl Seminar on Blue Economy, Bangladesh Maritime University (21 Apr 2025).</li>
+        <li><strong>Phytoplankton responses to extreme weather</strong> — 10th ICWFM, BUET (22–24 Feb 2025).</li>
+        <li><strong>Spatiotemporal Assessment of Coastal Erosion — Hatiya</strong> — World Ocean Day (10 Jun 2024).</li>
+        <li><strong>Plankton dynamics in salt marshes, Maheskhali</strong> — Intl Seminar on Climate Change & Environmental Sustainability (30 Apr 2024).</li>
+        <li><strong>Fertilizers & Plankton / Shrimp Growth</strong> — Comilla University Science Festival (24 Feb 2024).</li>
+      </ol>
+    </section>
+
+    <!-- Awards -->
+    <section id="awards" class="section section-box">
+      <h2 class="section__title">Awards & Honors</h2>
+      <ul>
+        <li>University Merit Scholarship (NSTU) — awarded across semesters for outstanding performance.</li>
+        <li>Best Poster Presenter — 3rd ICSF 2025.</li>
+        <li>Best Poster Presenter — 2nd Comilla University Science Festival 2024.</li>
+        <li>3rd place — Poster Presentation, Electronics & Electrical Engineering Day 2024 (NSTU).</li>
+      </ul>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section section-box">
+      <h2 class="section__title">Selected Projects</h2>
+
+      <div class="card-list">
+        <div class="card">
+          <h3>Marine Heatwaves in the Bay of Bengal</h3>
+          <p>Analysis of MHW frequency, intensity, and chlorophyll response (1982–2025). Tools: satellite SST, chlorophyll datasets, time-series analysis.</p>
+        </div>
+
+        <div class="card">
+          <h3>Flood Susceptibility Mapping</h3>
+          <p>Remote sensing + hydraulic modeling (HEC-RAS) + MCDA/AHP for Noakhali and surrounding districts — field validations included.</p>
+        </div>
+
+        <div class="card">
+          <h3>Coastal Vulnerability Assessment</h3>
+          <p>Multi-hazard geospatial assessment using participatory mapping and remote sensing for adaptation planning.</p>
+        </div>
+
+        <div class="card">
+          <h3>Microplastics & Plankton Studies</h3>
+          <p>Extraction and analysis of microplastics from plankton and copepods; implications for food-web and human health risk assessment.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-box">
+      <h2 class="section__title">Skills</h2>
+      <div class="skills-grid">
+        <div>
+          <h4>Field & Lab</h4>
+          <p>Field sampling, plankton identification, laboratory analysis, water quality monitoring</p>
+        </div>
+
+        <div>
+          <h4>GIS & Remote Sensing</h4>
+          <p>ArcGIS, QGIS, Google Earth Engine, spatial analysis</p>
+        </div>
+
+        <div>
+          <h4>Modeling & Analysis</h4>
+          <p>HEC-RAS, HEC-GeoRAS, Delft-3D, Python, R, MATLAB, IBM SPSS</p>
+        </div>
+
+        <div>
+          <h4>Visualization & Docs</h4>
+          <p>Adobe Illustrator, Photoshop, InDesign, MS Office</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-box">
+      <h2 class="section__title">Contact</h2>
+      <p><strong>Phone:</strong> +8801629015976</p>
+      <p><strong>Email:</strong> ssumitssarkerr@gmail.com</p>
+      <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/sumitsarker/" target="_blank">linkedin.com/in/sumitsarker</a></p>
+      <p><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Sumit-Sarker-3" target="_blank">researchgate.net/profile/Sumit-Sarker-3</a></p>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© 2025 Sumit Sarker — Noakhali, Bangladesh</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // Smooth scrolling for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) target.scrollIntoView({behavior:'smooth', block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
